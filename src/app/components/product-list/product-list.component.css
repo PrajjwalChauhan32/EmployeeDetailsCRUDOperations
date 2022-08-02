@@ -1,0 +1,11 @@
+.availableproduct{
+  color : rgb(45, 16, 236);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.unavailableproduct{
+  color : rgb(238, 22, 22);
+  font-size: 30px;
+  font-weight: bold;
+}

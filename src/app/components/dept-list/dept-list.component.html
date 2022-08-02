@@ -1,0 +1,21 @@
+<!-- <a routerLink = "/employee">
+  <img src="assets/images/logo.png" all="XYZ company" class="img-responsive">
+</a> -->
+<div class="container">
+ 
+  <table class='table table-bordered table-info table-striped   table-hover'>
+    <thead>
+        <tr>
+            <th>Department Code </th>
+            <th>Department Name</th>
+           <th>Location</th>
+           
+        </tr>
+    </thead>
+    <tr *ngFor="let dept of departments">
+      <td>{{dept.deptNo}}</td>
+      <td>{{dept.dname}}</td>
+      <td>{{dept.location}}</td>
+    </tr>
+  </table> 
+</div>

@@ -1,0 +1,61 @@
+<h2>ADD Employee</h2>
+<div class="container">
+    
+
+    <form #ef = "ngForm" (ngSubmit)="onsubmit()" >
+    
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Name</label></div>
+        <div class ="col-sm-4"><input type="text" name="ename" [(ngModel)] = "employee.ename"></div>
+    </div>
+    &nbsp;
+    
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Job</label></div>
+        <div class ="col-sm-4"><input type="text" name="job" [(ngModel)] = "employee.job"></div>
+    </div>
+    &nbsp;
+    
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Hire Date</label></div>
+        <div class ="col-sm-4"><input type="date" name="hiredate" [(ngModel)] = "employee.hiredate"></div>
+    </div>
+    &nbsp;
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Manager ID</label></div>
+        <div class ="col-sm-4"><input type="text" name="managerId" [(ngModel)] = "employee.managerId"></div>
+    </div>
+    &nbsp;
+    
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Salary</label></div>
+        <div class ="col-sm-4"><input type="text" name="salary" [(ngModel)] = "employee.salary"></div>
+    </div>
+    &nbsp;
+    
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Commission</label></div>
+        <div class ="col-sm-4"><input type="text" name="commission" [(ngModel)] = "employee.commission"></div>
+    </div>
+    &nbsp;
+    
+    <div class="form-group row">
+        <div class="col-sm-2"><label>Departments</label></div>
+        <div class="col-sm-4">
+            <select name="dept" [(ngModel)] = "employee.deptNo">
+                
+                <option *ngFor="let dept of departments" value="{{dept.deptNo}}">{{dept.dname}}</option>
+            </select>
+    
+        </div>
+    </div>
+    &nbsp;
+    <div class="form-group row" style="margin-left: 40px;">
+        <div class="col-sm-2">
+            <input type="submit" value="Submit" name="submit" class="btn btn-primary"/> </div>
+            <div class="col-sm-2"><input type="reset" value="Reset" name="reset" class="btn btn-danger"/>
+        </div>
+    </div>
+    </form>
+    
+    </div>
